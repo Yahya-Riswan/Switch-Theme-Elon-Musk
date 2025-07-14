@@ -1,0 +1,36 @@
+:root{
+  --bg-color:white;
+  --bg-secondary:black;
+  --color:Black;
+  --color-secondary:white;
+  --filter:none;
+}
+
+[data-theme="dark"] {
+    --bg-color:black;
+    --bg-secondary:white;
+    --color:white;
+    --color-secondary:black;
+    --filter:invert();
+}
+
+.themetoogle{
+    background-color: var(--bg-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+.themetoogle img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    filter: var(--filter);
+    transition: all 0.5s ease;
+}
+.themetoogle input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
